@@ -1,0 +1,124 @@
+
+/* Global
+-------------------------*/
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #487C84;
+  color: #fff;
+  font-family: 'Gothic A1', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 1.25em;
+}
+
+p {
+  margin: 0 0 1.25em;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+/* Layout
+-------------------------*/
+.container {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  margin: auto;
+  padding: 3em 1.75em;
+  text-align: center;
+}
+
+
+/* Filters
+-------------------------*/
+.filters {
+  display: flex;
+  margin: 1em auto 2em;
+}
+
+.filters li {
+  border-right: 1px solid #f1f1f1;
+}
+
+.filter li:last-child {
+  border-right: none;
+}
+
+.filters button {
+  background: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 1em 2em;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.filters button:hover, 
+.filters button.selected {
+  background: #f1f1f1;
+}
+
+/* Photo grid
+-------------------------*/
+
+.photo-list {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.photo-list li {
+  width: 100%;
+  padding: 1.25em;
+}
+
+.photo-list a {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-bottom: 16em;
+}
+
+.select-text {
+  padding: 3em 1em;
+  text-align: center;
+  border: 2px dashed #fff;
+}
+
+
+
+/* Media queries
+-------------------------*/
+@media(min-width: 768px) {
+
+  .container {
+    max-width: 1200px;
+  }
+  
+  .photo-list li {
+    width: 33.33333%;
+  }
+
+}
+
+
+
